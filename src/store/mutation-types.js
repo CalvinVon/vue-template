@@ -1,0 +1,1 @@
+export const ASIDE_COLLAPSE = 'ASIDE_COLLAPSE' // aside 折叠

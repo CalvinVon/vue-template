@@ -1,0 +1,26 @@
+{
+    "name": "neobio-fe-admin",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "npm run serve",
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build --mode production",
+        "build:test": "vue-cli-service build --mode test"
+    },
+    "dependencies": {
+        "@calvin_von/axios-api-module": "^1.2.0",
+        "obeyman": "0.0.3",
+        "vue": "^2.6.6",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.0.5",
+        "@vue/cli-service": "^3.0.5",
+        "babel-plugin-import": "^1.11.0",
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.5.21"
+    }
+}
