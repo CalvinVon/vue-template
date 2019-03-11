@@ -1,4 +1,5 @@
-# neobio-fe-admin
+# Vue template
+A Vue webpack starter with modular router, vuex, api, using Vue-cli 3.
 
 ## Project setup
 ```
