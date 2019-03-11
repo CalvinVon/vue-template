@@ -1,0 +1,15 @@
+/**
+ * mixin 函数集合
+ *
+ * @author leon
+ * @create 2018-08-16 16:43:55
+ */
+
+/**
+ * 根据设计需求，字体的大小 + 8 等于字体的行高
+ * $px {Number} 字体大小
+ */
+@mixin pxAndLh ($px, $add: 8) {
+    font-size: $px + px;
+    line-height: ($px + $add) + px;
+}

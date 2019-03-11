@@ -1,0 +1,39 @@
+/**
+ * 文本颜色管理
+ */
+
+
+.text {
+    &-primary {
+        color: $text-color-primary !important;
+    }
+
+    &-success {
+        color: $text-color-success !important;
+    }
+
+    &-neutral {
+        color: $text-color-neutral !important;
+    }
+
+    &-fail {
+        color: $text-color-fail !important;
+    }
+
+    &-left {
+        text-align: left !important;
+    }
+
+    &-right {
+        text-align: right !important;
+    }
+
+    &-center {
+        text-align: center !important;
+    }
+
+    &-color-85{
+        color: $text-color-black-85;
+    }
+}
+

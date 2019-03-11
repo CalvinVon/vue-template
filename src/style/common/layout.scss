@@ -1,0 +1,179 @@
+/**
+ * layout 布局
+ * @author leon
+ * @create 2018-05-24 14:15:11
+ */
+
+
+/**
+ *  w40 - w480 宽度
+ *
+ * for example
+ * .w40 {
+ *   width: 40px;
+ * }
+ *
+ * .w480 {
+ *   width: 480px;
+ * }
+
+ * ....
+ */
+@for $i from 5 through 60 {
+    .w#{$i*8} {
+        width: $i * 8 + px !important;
+    }
+}
+
+
+/**
+ *  ml8 - ml80 pl8 - pl80 .... 内边距和外边距
+ *
+ * for example
+ * .ml32 {
+ *   margin-left: 32px;
+ * }
+ *
+ * .pb40 {
+ *   padding-bottom: 40px;
+ * }
+
+ * ....
+ */
+@for $i from 1 through 10 {
+    .ml#{$i*8}{
+        margin-left: $i * 8 + px;
+    }
+    .mr#{$i*8}{
+        margin-right: $i * 8 + px;
+    }
+    .mt#{$i*8}{
+        margin-top: $i * 8 + px;
+    }
+    .mb#{$i*8}{
+        margin-bottom: $i * 8 + px;
+    }
+    .pl#{$i*8}{
+        padding-left: $i * 8 + px;
+    }
+    .pr#{$i*8}{
+        padding-right: $i * 8 + px;
+    }
+    .pt#{$i*8}{
+        padding-top: $i * 8 + px;
+    }
+    .pb#{$i*8}{
+        padding-bottom: $i * 8 + px;
+    }
+}
+
+
+.no-margin {
+    margin: 0 !important;
+    &_bottom {
+        margin-bottom: 0 !important;
+    }
+    &_top {
+        margin-top: 0 !important;
+    }
+    &_left {
+        margin-left: 0 !important;
+    }
+    &_right {
+        margin-right: 0 !important;
+    }
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.bq{
+    border:1px solid #e9e9e9;
+}
+.bl{
+    border-left:1px solid #e9e9e9;
+}
+.bt{
+    border-top:1px solid #e9e9e9;
+}
+.br{
+    border-right:1px solid #e9e9e9;
+}
+.bb{
+    border-bottom:1px solid #e9e9e9;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    &-column {
+        flex-flow: column nowrap;
+    }
+    &-wrap {
+        flex-wrap: wrap;
+    } // 主轴对齐方式
+    &-start {
+        justify-content: flex-start;
+    }
+    &-end {
+        justify-content: flex-end;
+    }
+    &-space-around {
+        justify-content: space-around;
+    }
+    &-space-between {
+        justify-content: space-between;
+    } // 二轴对齐方式
+    &-align-start {
+        align-items: flex-start;
+    }
+    &-align-end {
+        align-items: flex-end;
+    }
+    &-none {
+        flex: none;
+    }
+    &-extensible {
+        flex: 1;
+    }
+}
+
+.inline-block {
+    display: inline-block;
+    &+& {
+        vertical-align: bottom;
+    }
+    &_top {
+        display: inline-block;
+        .inline-block+& {
+            vertical-align: top;
+        }
+    }
+}
+
+.relative {
+    position: relative;
+
+    .absolute {
+        position: absolute;
+    }
+}
+
+.float {
+    &-left {
+        float: left;
+    }
+    &-right {
+        float: right;
+    }
+    &-clear {
+        &::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    }
+}

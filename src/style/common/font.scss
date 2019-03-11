@@ -1,0 +1,43 @@
+// 字体类
+
+.font {
+    &-biggest {
+        @include pxAndLh(20);
+    }
+
+    &-bigger {
+        @include pxAndLh(18);
+    }
+
+    &-big {
+        @include pxAndLh(16);
+    }
+
+    &-normal {
+        @include pxAndLh(14);
+    }
+
+    &-small {
+        @include pxAndLh(13);
+    }
+
+    &-smaller {
+        @include pxAndLh(13);
+    }
+
+    &-bold {
+        font-weight: bold;
+    }
+
+    &-bolder {
+        font-weight: bolder;
+    }
+}
+
+.font-weight {
+    font-weight: 600;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

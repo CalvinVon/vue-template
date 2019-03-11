@@ -1,0 +1,45 @@
+// scss 变量管理
+
+// 主色调
+$text-color-primary: #FF6D33;
+
+$text-color-success: #52C41A;
+$text-color-neutral: #FAAD14;
+$text-color-fail: #F5222D;
+
+
+$line-color:#e9e9e9;
+
+// 黑色透明度
+$text-color-black-85: rgba(0, 0, 0, 0.85);
+$text-color-black-65: rgba(0, 0, 0, 0.65);
+$text-color-black-45: rgba(0, 0, 0, 0.45);
+$text-color-black-25: rgba(0, 0, 0, 0.25);
+$text-color-black-15: rgba(0, 0, 0, 0.15);
+$text-color-black-9: rgba(0, 0, 0, 0.09);
+$text-color-black-4: rgba(0, 0, 0, 0.04);
+$text-color-black-2: rgba(0, 0, 0, 0.02);
+
+// 白色透明度
+$text-color-white-85: rgba(255, 255, 255, 0.85);
+$text-color-white-65: rgba(255, 255, 255, 0.65);
+$text-color-white-45: rgba(255, 255, 255, 0.45);
+$text-color-white-25: rgba(255, 255, 255, 0.25);
+$text-color-white-15: rgba(255, 255, 255, 0.15);
+$text-color-white-9: rgba(255, 255, 255, 0.09);
+$text-color-white-4: rgba(255, 255, 255, 0.04);
+$text-color-white-2: rgba(255, 255, 255, 0.02);
+
+// 标题透明度
+$title-color-black-85: rgba(0, 0, 0, 0.85);
+$title-color-black-65: rgba(0, 0, 0, 0.65);
+$title-color-black-45: rgba(0, 0, 0, 0.45);
+$title-color-black-25: rgba(0, 0, 0, 0.25);
+
+$title-color-white: #fff;
+$title-color-white-65: rgba(255, 255, 255, 0.65);
+
+$background-color: #F0F2F5;
+$background-color-primary: #ff6d33;
+
+$border-color: #E9E9E9;
