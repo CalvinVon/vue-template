@@ -4,7 +4,7 @@ import Router from 'vue-router';
 import * as qs from '../utils/querystring';
 // import WechatLoginUtil from '@/components/login/wechat-login';
 
-import HomeRoute from './home.route'
+import HomeRoute from './modules/home.route'
 // #endregion end
 
 Vue.use(Router);
